@@ -1,0 +1,15 @@
+---
+title: "About"
+---
+
+The *Biodiversity Futures Lab* is based at the Natural History Museum in London. 
+
+It has the following very clever people working there:
+
+- Professor Andy Purvis: Principal Investigator
+- Dr Adriana De Palma: Principal Investigator
+- Sara Contu: Biodiversity Data Supervisor
+- Izzi Strudwick: Project Coordinator
+- Dr Connor Duffin: Research Software Engineer
+- Patrick Walkden: PhD student
+- Justin Isip: PhD student
