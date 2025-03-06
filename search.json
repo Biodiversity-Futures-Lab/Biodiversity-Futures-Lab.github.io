@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The Biodiversity Futures Lab is based at the Natural History Museum in London.\nIt has the following very clever people working there:\n\nProfessor Andy Purvis: Principal Investigator\nDr Adriana De Palma: Principal Investigator\nSara Contu: Biodiversity Data Supervisor\nIzzi Strudwick: Project Coordinator\nDr Connor Duffin: Research Software Engineer\nPatrick Walkden: PhD student\nJustin Isip: PhD student"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Biodiversity Futures Lab",
+    "section": "",
+    "text": "Welcome to the Biodiversity Futures Lab website! This is a work-in-progress and will be updated as we add content to it - bear with us!\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
