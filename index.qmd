@@ -1,5 +1,8 @@
 ---
 title: "Biodiversity Futures Lab"
+about:
+  template: jolla
+  image: assets/bfl-logo.png
 ---
 
 Welcome to the Biodiversity Futures Lab website! This is a work-in-progress and will be updated as we add content to it - bear with us!
