@@ -7,7 +7,17 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About
+      - href: best-practices.qmd
+        text: Best Practices
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/Biodiversity-Futures-Lab/Biodiversity-Futures-Lab.github.io
+          - text: Report an Issue
+            href:  https://github.com/Biodiversity-Futures-Lab/Biodiversity-Futures-Lab.github.io/issues
 
 format:
   html:
