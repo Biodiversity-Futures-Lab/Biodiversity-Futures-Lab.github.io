@@ -7,6 +7,27 @@
     "text": "The Biodiversity Futures Lab is based at the Natural History Museum in London.\nIt has the following very clever people working there:\n\nProfessor Andy Purvis: Principal Investigator\nDr Adriana De Palma: Principal Investigator\nSara Contu: Biodiversity Data Supervisor\nIzzi Strudwick: Project Coordinator\nDr Connor Duffin: Research Software Engineer\nPatrick Walkden: PhD student\nJustin Isip: PhD student"
   },
   {
+    "objectID": "best-practices.html",
+    "href": "best-practices.html",
+    "title": "Best Practices",
+    "section": "",
+    "text": "Welcome to the Biodiversity Futures lab software development best practices guide! This is a short document outlining the best practices for developing software within the BFL, designed to get programmers up and running quickly, to make contributions."
+  },
+  {
+    "objectID": "best-practices.html#issues",
+    "href": "best-practices.html#issues",
+    "title": "Best Practices",
+    "section": "Issues",
+    "text": "Issues\nIf something looks wrong, then make an issue. This will then be discussed and the team will prioritise and work on it as required. Once the fix has been implemented and merged into the main branch, then the issue will be closed."
+  },
+  {
+    "objectID": "best-practices.html#reviewing-pull-requests",
+    "href": "best-practices.html#reviewing-pull-requests",
+    "title": "Best Practices",
+    "section": "Reviewing pull requests",
+    "text": "Reviewing pull requests\nWhen reviewing a pull request the following guidelines are helpful. Unless the changes are very minor, try to pull the code and at least run the tests on your own machine. When looking at the changes, use the following as a general guideline:\n\nIs it clear what the feature/fix the PR is addressing?\nDoes the code pass tests when run locally?\nIs the style guide followed? Is the code clean and well-documented?\nIf there are new package dependencies: are they popular/well-maintained?\nIf there are any architectural changes: are they sound choices?\nIf it is a scientific contribution: is the methodology sensible?\n\nMechanically here is a guide to what to do when reviewing a pull request (using Git on the command line, from the base directory of the repository):\n\nCheckout the branch that is going to be merged: git checkout branch_to_be_merged.\nPull the changes from the origin repository git pull origin. You should see some file deltas here.\n(If using {renv}) Update the environment with renv::restore() from within R.\nRun the tests: if within a package just run devtools::test(), or if not run testthat::test_dir().\n\nHaving done these steps we have a minimal procedure to check that the code runs and passes the tests on another machine. From here we can check the above guidelines to be sure that the changes are sensible."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Biodiversity Futures Lab",
