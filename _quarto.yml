@@ -9,8 +9,14 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: best-practices.qmd
-        text: Best Practices
+      - href: wiki.qmd
+        text: Wiki
+      - href: outputs.qmd
+        text: Outputs
+      - href: publications.qmd
+        text: Publications
+      - href: news.qmd
+        text: News
     tools:
       - icon: github
         menu:

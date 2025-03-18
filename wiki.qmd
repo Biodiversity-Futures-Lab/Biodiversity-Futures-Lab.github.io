@@ -1,10 +1,20 @@
 ---
-title: "Best Practices"
+title: BFL Wiki
 ---
+
+This is a landing page for various resources related to day-to-day operations in the lab. Chiefly:
+
+- A "Welcome to the Lab" section on how we work in BFL.
+- A Best Practices guide for coding in BFL.
+
+## Welcome to the Lab!
+
+
+## Best practices
 
 Welcome to the *Biodiversity Futures lab* software development best practices guide! This is a short document outlining the best practices for developing software within the BFL, designed to get programmers up and running quickly, to make contributions.
 
-# Code style
+### Code style
 
 Use [Google style guide for R](https://google.github.io/styleguide/Rguide.html), which is itself a fork of the [tidyverse style guide](https://style.tidyverse.org/). This adds some sensible additions on top of the tidyverse style guide, such as using explicit returns from functions, and qualifying namespaces (e.g., always using the double colon syntax `purrr::map()`).
 
@@ -12,13 +22,13 @@ If you want to use `{lintr}` to check adherence to the style guide, then check t
 
 If writing C++ extensions (via `Rcpp`) then we use the [Google style guide](https://google.github.io/styleguide/cppguide.html).
 
-# Unit testing
+### Unit testing
 
 For unit testing we use `{testthat}`. Follow the guides on the [website](https://testthat.r-lib.org/index.html) to get set up in your package, with the use of [usethis](https://github.com/r-lib/usethis). If you’ve got `{usethis}` installed, then from the repo you want to test, you run `usethis:use_test("name")`.
 
 You can use testing outside of package development, for example, within the structure of a `{targets}` repo, through direct imports of your `R` code through the use of `source(...)`.
 
-# Version control
+### Version control
 
 For version control, we use Git, with the repository hosted on GitHub. Depending on the circumstances, host the repo either on your own personal repo, or, on the BFL organisation repo. Set it to either private or public depending on the circumstances of the work.
 
@@ -35,11 +45,11 @@ In more detail, this process is:
 
 **NB:** For branching we previously tried the [Git-flow](https://nvie.com/posts/a-successful-git-branching-model/) branching strategy. However after trying this for 6 months, it added unnecessary complications to our workflow, as we typically don't need to maintain older versions of the pipeline; we implement new fixes in a rolling-release, like most other R packages.
 
-## Issues
+### Issues
 
 If something looks wrong, then make an issue. This will then be discussed and the team will prioritise and work on it as required. Once the fix has been implemented and merged into the `main` branch, then the issue will be closed.
 
-# Documentation
+### Documentation
 
 All functions that are written and committed should be documented. Follow the `tidyverse` style guide when writing this documentation. So the below for a quick-reference example:
 
@@ -63,7 +73,7 @@ RunTarget <- function(target, pipe_file = "_targets.Rmd") {
 
 For full details see [here](https://style.tidyverse.org/documentation.html).
 
-# Code reviews
+### Code reviews
 
 When doing code reviews we follow the [Google code review guidelines](https://google.github.io/eng-practices/review/). Borrowed from this guide (and the NHM Dev wiki), in short, we suggest the following things be asked during a code review:
 
@@ -78,7 +88,7 @@ When doing code reviews we follow the [Google code review guidelines](https://go
 
 You can request a code review on any code you would like to be reviewed, be it a script, a package, or an `Rmarkdown` file.
 
-## Reviewing pull requests
+#### Reviewing pull requests
 
 When reviewing a pull request the following guidelines are helpful. Unless the changes are very minor, try to pull the code and at least run the tests on your own machine. When looking at the changes, use the following as a general guideline:
 
@@ -98,11 +108,11 @@ Mechanically here is a guide to what to do when reviewing a pull request (using 
 
 Having done these steps we have a minimal procedure to check that the code runs and passes the tests on another machine. From here we can check the above guidelines to be sure that the changes are sensible.
 
-# Rstudio (IDEs)
+### Rstudio (IDEs)
 
 You can use any IDE you want to work with. Generally, however, we have the most experience with using just Rstudio or Rstudio with an older-school editor such as Vim or Emacs.
 
-# Miscellanea
+### Miscellanea
 
 - In a perfect world seperate functions for analysis from the analysis piepline itself. **Turn analysis functions into a package, stored separate from the actual data analysis pipeline** Then you can unit test them, share them with other more easily, and seperate out *package development* from *data analysis*.
 - Use `{targets}` when writing data analysis pipelines to keep track of dependencies and avoid wasting compute resources.
