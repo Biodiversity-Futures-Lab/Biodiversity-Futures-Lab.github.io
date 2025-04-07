@@ -2,7 +2,7 @@
 title: "News"
 ---
 
-**New paper in [Science]**(https://www.science.org/journal/science) *(4th April 2025)* Are 
+**New paper in [Science](https://www.science.org/journal/science)** Are 
 insects in rapid global decline? If so, what would turn things around? 
 The latest paper from the [GLiTRS](https://glitrs.ceh.ac.uk/) project, [Integrating 
 multiple evidence streams to understand insect biodiversity 
@@ -14,4 +14,5 @@ different lines of evidence into a synthetic threat-response model can provide a
 deeper understanding. As well as being among the paper's authors, Andy was interviewed 
 for an article about it on the [NHM news site]
 (https://www.nhm.ac.uk/discover/news/2025/april/to-save-insects-we-need-to-understand-their-decline.html).
+*(4th April 2025)* 
 
