@@ -2,7 +2,7 @@
 title: "News"
 ---
 
-**New paper in [Science**](https://www.science.org/journal/science) -- Are 
+**New paper in** [**Science**](https://www.science.org/journal/science) -- Are 
 insects in rapid global decline? If so, what would turn things around? 
 The latest paper from the [GLiTRS](https://glitrs.ceh.ac.uk/) project, [Integrating 
 multiple evidence streams to understand insect biodiversity 
