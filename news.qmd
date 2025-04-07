@@ -2,8 +2,7 @@
 title: "News"
 ---
 
-**New paper in [Science]**(https://www.science.org/journal/science) *(4th April 2025)*
-
+**New paper in [Science]**(https://www.science.org/journal/science) *(4th April 2025)*  
 Are insects in rapid global decline? If so, what should be done to turn things around? 
 The latest paper from the [GLiTRS](https://glitrs.ceh.ac.uk/) project, [Integrating 
 multiple evidence streams to understand insect biodiversity 
