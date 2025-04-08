@@ -2,9 +2,11 @@
 title: "News"
 ---
 
-**BII featured in** [**Fixing Our Broken Planet**](https://www.nhm.ac.uk/visit/galleries-and-museum-map/fixing-our-broken-planet.html) **exhibition** *(8th April 2025)* -- The 
-Museum's brilliant new exhibition features Sabine Nix, from her time in BFL. The exhibition's opening featured on [Channel 4 News](https://www.channel4.com/news/new-natural-history-gallery-explores-how-science-can-fix-a-broken-planet). 
-![](IMG_3175.jpeg){fig-alt = "One of the information boards in Fixing Our Broken Planet"}
+**BII featured in** [**Fixing Our Broken Planet**](https://www.nhm.ac.uk/visit/galleries-and-museum-map/fixing-our-broken-planet.html) 
+**exhibition** *(8th April 2025)* -- The Museum's brilliant new exhibition features Sabine Nix, 
+from her time in BFL. The exhibition's opening featured on 
+[Channel 4 News](https://www.channel4.com/news/new-natural-history-gallery-explores-how-science-can-fix-a-broken-planet). 
+![](assets/IMG_3175.jpeg){fig-alt = "One of the information boards in Fixing Our Broken Planet"}
 
 **New paper in** [**Science**](https://www.science.org/journal/science) *(4th April 2025)* -- Are 
 insects in rapid global decline? If so, what would turn things around? 
