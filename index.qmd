@@ -5,7 +5,17 @@ about:
   image: assets/bfl-logo.png
 ---
 
-Welcome to the Biodiversity Futures Lab website! This is a work-in-progress and will be updated as we add content to it - bear with us!
+Welcome to the website of the Biodiversity Futures Lab (BFL) at the [Natural History Museum](https://www.nhm.ac.uk/) 
+in London! Lab members mostly compile and synthesise evidence about how human actions affect biodiversity and nature's 
+contributions to people. We use a range of modelling approaches, often with the aim of helping decision-makers choose 
+better options for people and nature.
+
+We want a more positive future Earth's biodiversity and a fairer future for people. We are therefore willing to work 
+with any organisation that we believe is working towards one or both of these goals, and that is not working against 
+either of them. As a result, BFL's work encompasses commercial-facing projects and policy-related work as well as 
+more traditionally academic research.
+
+*(This site is still very much a work-in-progress, so please bear with us as we add more content and keep it updated.)*
 
 This is a Quarto website.
 
