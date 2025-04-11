@@ -30,13 +30,17 @@ works_from_orcids <- openalexR::oa_fetch(
   abstract = FALSE
 )
 
-# get only the unique references
-distinct_works <- works_from_orcids |>
+distinct_works <- works_from_orcids  |>
+  # we don't actually have any retracted works in this list
+  # but let's remove them just in case
+  dplyr::filter(is_retracted == FALSE) |>
+  # keep only the unique references
   dplyr::distinct(tolower(display_name), .keep_all = TRUE) |>
+  # sort with the most recent publications first
   dplyr::arrange(dplyr::desc(publication_year))
 ```
 
-```{r formatted-references, echo = FALSE}
+```{r formatted-references, echo = FALSE, cache = TRUE}
 
 # furnction to format OpenAlex outputs into a Harvard-style reference
 GetFormattedReference <- function(reference) {
@@ -58,13 +62,20 @@ GetFormattedReference <- function(reference) {
       paste(" & ", authors[length(authors)])
   }
   
+  # extract the doi or url
+  link <- ifelse(
+    is.na(reference$doi),
+    reference$source_id,
+    reference$doi
+  )
+
   # add the relevant information together
   formatted_ref <- paste0(
     author_list,
     " (", reference$publication_year, "). ",
     reference$title, ", ",
     gluedown::md_italic(reference$source_display_name), ", ",
-    gluedown::md_link(reference$doi, reference$doi)
+    gluedown::md_link(link, link)
   )
   
   # return the formatted reference
@@ -84,7 +95,7 @@ for(i in 1:length(distinct_references)) {
 ```
 
 
-```{r render-references, output = "asis"}
-gluedown::md_indent(distinct_references)
+```{r render-references, output = "asis", echo = FALSE}
+gluedown::md_paragraph(distinct_references)
 ```
 
