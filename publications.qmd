@@ -65,11 +65,11 @@ GetFormattedReference <- function(reference, lab_member_details) {
   
   # extract the doi or url
   if(!is.na(reference$doi)) {
-    link <- gluedown::md_link(reference$doi, reference$doi)
+    link <- gluedown::md_autolink(reference$doi)
   } else if (!is.na(reference$source_id)) {
-    link <- gluedown::md_link(reference$source_id, reference$source_id)
+    link <- gluedown::md_autolink(reference$source_id)
   } else {
-    link <- gluedown::md_link(reference$landing_page_url, reference$landing_page_url)
+    link <- gluedown::md_autolink(reference$landing_page_url)
   }
   
   # transform the title to sentence case if needed
@@ -77,14 +77,34 @@ GetFormattedReference <- function(reference, lab_member_details) {
     reference$title == toupper(reference$title),
     stringr::str_to_sentence(reference$title),
     reference$title
-  )
+  ) |>
+    paste0(", ")
+  
+  # get the journal title if there is one
+  if(is.na(reference$source_display_name)) {
+    source <- ""
+  } else {
+    # transform to sentence case if needed
+    if(reference$source_display_name == toupper(reference$source_display_name)) {
+      source <- stringr::str_to_sentence(reference$source_display_name) |>
+        gluedown::md_italic() |>
+        paste0(", ")
+    } else {
+      source <- reference$source_display_name |>
+        gluedown::md_italic() |>
+        paste0(", ")
+    }
+  }
+  
+  # format the year
+  year <- paste0(" (", reference$publication_year, "). ")
 
   # add the relevant information together
   formatted_ref <- paste0(
     author_list,
-    " (", reference$publication_year, "). ",
-    title, ", ",
-    gluedown::md_italic(reference$source_display_name), ", ",
+    year,
+    title,
+    source,
     link
   )
   
@@ -105,9 +125,7 @@ for(i in 1:length(distinct_references)) {
 
 ```
 
-The following is a list of publications from members of the lab. 
-
-
+The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package.
 
 ```{r render-references, output = "asis", echo = FALSE}
 gluedown::md_paragraph(distinct_references)
