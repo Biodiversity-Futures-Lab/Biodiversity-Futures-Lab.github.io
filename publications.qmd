@@ -125,7 +125,15 @@ for(i in 1:length(distinct_references)) {
 
 ```
 
-The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package.
+
+```{r round-down, echo = FALSE}
+RoundDown100 <- function(x) {
+  return(floor(x / 100) * 100)
+}
+```
+
+
+The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package. Our current lab members combined have written over `r nrow(distinct_works) |> RoundDown100()` publications, cited over `r sum(distinct_works$cited_by_count) |> RoundDown100() |> scales::number(big.mark = ",")` times.
 
 ```{r render-references, output = "asis", echo = FALSE}
 gluedown::md_paragraph(distinct_references)
