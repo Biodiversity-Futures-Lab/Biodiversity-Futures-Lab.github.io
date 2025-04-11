@@ -64,10 +64,19 @@ GetFormattedReference <- function(reference, lab_member_details) {
   }
   
   # extract the doi or url
-  link <- ifelse(
-    is.na(reference$doi),
-    reference$source_id,
-    reference$doi
+  if(!is.na(reference$doi)) {
+    link <- gluedown::md_link(reference$doi, reference$doi)
+  } else if (!is.na(reference$source_id)) {
+    link <- gluedown::md_link(reference$source_id, reference$source_id)
+  } else {
+    link <- gluedown::md_link(reference$landing_page_url, reference$landing_page_url)
+  }
+  
+  # transform the title to sentence case if needed
+  title <- ifelse(
+    reference$title == toupper(reference$title),
+    stringr::str_to_sentence(reference$title),
+    reference$title
   )
 
   # add the relevant information together
@@ -76,7 +85,7 @@ GetFormattedReference <- function(reference, lab_member_details) {
     " (", reference$publication_year, "). ",
     reference$title, ", ",
     gluedown::md_italic(reference$source_display_name), ", ",
-    gluedown::md_link(link, link)
+    link
   )
   
   # return the formatted reference
