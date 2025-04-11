@@ -1,3 +1,90 @@
 ---
 title: "Publications"
 ---
+
+```{r orchid-works, echo = FALSE, output = FALSE, warning = FALSE}
+orchid <- c(   
+  # Adriana
+  "0000-0002-5345-4917",
+  # Andy
+  "0000-0002-8609-6204",
+  # Sara?
+  # Connor?
+  # Victoria
+  "0000-0003-0122-3292",
+  # Alexa
+  "0000-0002-5024-0737",
+  # Patrick?
+  # Sophie
+  "0000-0002-0447-9448",
+  # Justin
+  "0000-0002-9686-8888"
+)
+
+# get all works from orcID using open alex
+works_from_orcids <- openalexR::oa_fetch(
+  entity = "works",
+  author.orcid = orchid,
+  verbose = TRUE,
+  output = "dataframe",
+  abstract = FALSE
+)
+
+# get only the unique references
+distinct_works <- works_from_orcids |>
+  dplyr::distinct(tolower(display_name), .keep_all = TRUE) |>
+  dplyr::arrange(dplyr::desc(publication_year))
+```
+
+```{r formatted-references, echo = FALSE}
+
+# furnction to format OpenAlex outputs into a Harvard-style reference
+GetFormattedReference <- function(reference) {
+  
+  # extract the authors
+  authors <- reference$authorships
+  authors <- lapply(authors, function(x) {
+    x$display_name
+  })
+  # transform into a vector
+  authors <- unlist(authors)
+  # make a full author list for the reference
+  if(length(authors) == 1) {
+    author_list <- authors
+  } else if (length(authors) == 2) {
+    author_list <- paste0(authors, collapse = " & ")
+  } else {
+    author_list <- paste0(authors[1:length(authors) - 1], collapse = ", ") |>
+      paste(" & ", authors[length(authors)])
+  }
+  
+  # add the relevant information together
+  formatted_ref <- paste0(
+    author_list,
+    " (", reference$publication_year, "). ",
+    reference$title, ", ",
+    gluedown::md_italic(reference$source_display_name), ", ",
+    gluedown::md_link(reference$doi, reference$doi)
+  )
+  
+  # return the formatted reference
+  return(formatted_ref)
+}
+
+# set up an empty vector to hold the results
+distinct_references <- rep(NA, nrow(distinct_works))
+
+# get the formatted reference for each open Alex entry
+for(i in 1:length(distinct_references)) {
+  distinct_references[i] <- GetFormattedReference(
+    distinct_works[i, ]
+  )
+}
+
+```
+
+
+```{r render-references, output = "asis"}
+gluedown::md_indent(distinct_references)
+```
+
