@@ -3,28 +3,25 @@ title: "Publications"
 ---
 
 ```{r orchid-works, echo = FALSE, output = FALSE, warning = FALSE}
-orchid <- c(   
-  # Adriana
-  "0000-0002-5345-4917",
-  # Andy
-  "0000-0002-8609-6204",
+
+lab_member_details <- rbind(
+  c("Andy Purvis", "0000-0002-8609-6204"),
+  c("Adriana De Palma", "0000-0002-5345-4917"),
+  c("Victoria J. Burton", "0000-0003-0122-3292"),
+  c("Alexa Varah", "0000-0002-5024-0737"),
+  c("Sophie Jane Tudge", "0000-0002-0447-9448"),
+  c("Justin E. Isip", "0000-0002-9686-8888")
   # Sara?
   # Connor?
-  # Victoria
-  "0000-0003-0122-3292",
-  # Alexa
-  "0000-0002-5024-0737",
   # Patrick?
-  # Sophie
-  "0000-0002-0447-9448",
-  # Justin
-  "0000-0002-9686-8888"
-)
+) |>
+  as.data.frame() |>
+  setNames(c("name", "orcid"))
 
 # get all works from orcID using open alex
 works_from_orcids <- openalexR::oa_fetch(
   entity = "works",
-  author.orcid = orchid,
+  author.orcid = lab_member_details$orcid,
   verbose = TRUE,
   output = "dataframe",
   abstract = FALSE
@@ -43,7 +40,7 @@ distinct_works <- works_from_orcids  |>
 ```{r formatted-references, echo = FALSE, cache = TRUE}
 
 # furnction to format OpenAlex outputs into a Harvard-style reference
-GetFormattedReference <- function(reference) {
+GetFormattedReference <- function(reference, lab_member_details) {
   
   # extract the authors
   authors <- reference$authorships
@@ -52,6 +49,10 @@ GetFormattedReference <- function(reference) {
   })
   # transform into a vector
   authors <- unlist(authors)
+  
+  # embolden lab author
+  authors[authors %in% lab_member_details$name] <- gluedown::md_bold(authors[authors %in% lab_member_details$name])
+  
   # make a full author list for the reference
   if(length(authors) == 1) {
     author_list <- authors
@@ -88,7 +89,8 @@ distinct_references <- rep(NA, nrow(distinct_works))
 # get the formatted reference for each open Alex entry
 for(i in 1:length(distinct_references)) {
   distinct_references[i] <- GetFormattedReference(
-    distinct_works[i, ]
+    distinct_works[i, ],
+    lab_member_details = lab_member_details
   )
 }
 
