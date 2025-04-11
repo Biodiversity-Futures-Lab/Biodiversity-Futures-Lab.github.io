@@ -83,7 +83,7 @@ GetFormattedReference <- function(reference, lab_member_details) {
   formatted_ref <- paste0(
     author_list,
     " (", reference$publication_year, "). ",
-    reference$title, ", ",
+    title, ", ",
     gluedown::md_italic(reference$source_display_name), ", ",
     link
   )
@@ -104,6 +104,9 @@ for(i in 1:length(distinct_references)) {
 }
 
 ```
+
+The following is a list of publications from members of the lab. 
+
 
 
 ```{r render-references, output = "asis", echo = FALSE}
