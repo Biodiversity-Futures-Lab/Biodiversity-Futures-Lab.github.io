@@ -10,7 +10,8 @@ lab_member_details <- rbind(
   c("Victoria J. Burton", "0000-0003-0122-3292"),
   c("Alexa Varah", "0000-0002-5024-0737"),
   c("Sophie Jane Tudge", "0000-0002-0447-9448"),
-  c("Justin E. Isip", "0000-0002-9686-8888")
+  c("Justin E. Isip", "0000-0002-9686-8888"),
+  c("Patrick A. Walkden", "0000-0002-5922-8777")
   # Sara?
   # Connor?
   # Patrick?
@@ -36,6 +37,42 @@ distinct_works <- works_from_orcids  |>
   # sort with the most recent publications first
   dplyr::arrange(dplyr::desc(publication_year))
 ```
+```{r add-topic, echo = FALSE, cache = TRUE}
+
+# get a vector of topics for each reference
+all_topics <- lapply(distinct_works$topics, function(x) {
+  
+  if("display_name" %in% names(x)){
+    x[x$type == "field", "display_name"] |>
+      dplyr::pull(display_name) |>
+      stringr::str_replace_all(" ", "_") |>
+      unique()
+  } else {
+    "no_topic"
+  }
+
+})
+
+# find out which references have no topic
+no_topics <- which(all_topics == "no_topic")
+# only a few of these look relevant (Adapting to a diverse world, Living Planet Report 2018: Aiming Higher and Chapter 2.2 Status and Trends –Nature)
+
+# topics to remove
+to_remove <- c(
+  which(all_topics %in% c(  
+    # incorrect datasets
+    "Health_Professions", "Medicine", "Engineering",
+    # datasets that we'll list in the outputs section
+    "Computer_Science")
+  ), 
+  grep("schistosomes in baboons", distinct_works$title)
+)
+
+distinct_works <- distinct_works[-to_remove, ]
+
+```
+
+
 
 ```{r formatted-references, echo = FALSE, cache = TRUE}
 
@@ -43,8 +80,7 @@ distinct_works <- works_from_orcids  |>
 GetFormattedReference <- function(reference, lab_member_details) {
   
   # extract the authors
-  authors <- reference$authorships
-  authors <- lapply(authors, function(x) {
+  authors <- lapply(reference$authorships, function(x) {
     x$display_name
   })
   # transform into a vector
@@ -98,7 +134,7 @@ GetFormattedReference <- function(reference, lab_member_details) {
   
   # format the year
   year <- paste0(" (", reference$publication_year, "). ")
-
+  
   # add the relevant information together
   formatted_ref <- paste0(
     author_list,
