@@ -2,7 +2,7 @@
 title: "Publications"
 ---
 
-```{r orchid-works, echo = FALSE, output = FALSE, warning = FALSE}
+```{r orcid-works, echo = FALSE, output = FALSE, warning = FALSE}
 
 lab_member_details <- rbind(
   c("Andy Purvis", "0000-0002-8609-6204"),
