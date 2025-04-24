@@ -20,7 +20,7 @@ The Biodiversity Futures Lab at the Natural History Museum in London explores ho
 | ![](images/izzi.png){width=80px style="border-radius: 50%;"}    | **Izzi Strudwick**  <br> *Project Coordinator*                       | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                      |
 | ![](images/alexa.jpg){width=80px style="border-radius: 50%;"}   | **Dr Alexa Varah**  <br> *Postdoctoral Researcher*                   | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/alexavarah)            |
 | ![](images/patrick.jpg){width=80px style="border-radius: 50%;"} | **Dr Patrick Walkden**  <br> *Postdoctoral Researcher*               | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/pwalkden95)            |
-| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                      |
-| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                      |
+| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/justin-isip)           |
+| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sophietudge)           |
 
 : {tbl-colwidths="[25,40,25]"}
