@@ -10,7 +10,7 @@ website:
       - href: about.qmd
         text: About
       - href: wiki.qmd
-        text: Wiki
+        text: Best Practices
       - href: outputs.qmd
         text: Outputs
       - href: publications.qmd
