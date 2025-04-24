@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BFL Wiki – Biodiversity Futures Lab</title>
+<title>Best Practices – Biodiversity Futures Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -132,7 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./wiki.html" aria-current="page"> 
-<span class="menu-text">Wiki</span></a>
+<span class="menu-text">Best Practices</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./outputs.html"> 
@@ -172,32 +138,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#welcome-to-the-lab" id="toc-welcome-to-the-lab" class="nav-link active" data-scroll-target="#welcome-to-the-lab">Welcome to the Lab!</a></li>
-  <li><a href="#best-practices" id="toc-best-practices" class="nav-link" data-scroll-target="#best-practices">Best practices</a>
-  <ul class="collapse">
-  <li><a href="#code-style" id="toc-code-style" class="nav-link" data-scroll-target="#code-style">Code style</a></li>
-  <li><a href="#unit-testing" id="toc-unit-testing" class="nav-link" data-scroll-target="#unit-testing">Unit testing</a></li>
-  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version control</a></li>
-  <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Issues</a></li>
-  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
-  <li><a href="#code-reviews" id="toc-code-reviews" class="nav-link" data-scroll-target="#code-reviews">Code reviews</a></li>
-  <li><a href="#rstudio-ides" id="toc-rstudio-ides" class="nav-link" data-scroll-target="#rstudio-ides">Rstudio (IDEs)</a></li>
-  <li><a href="#miscellanea" id="toc-miscellanea" class="nav-link" data-scroll-target="#miscellanea">Miscellanea</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">BFL Wiki</h1>
+<h1 class="title">Best Practices</h1>
 </div>
 
 
@@ -214,118 +163,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is a landing page for various resources related to day-to-day operations in the lab. Chiefly:</p>
-<ul>
-<li>A “Welcome to the Lab” section on how we work in BFL.</li>
-<li>A Best Practices guide for coding in BFL.</li>
-</ul>
-<section id="welcome-to-the-lab" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-the-lab">Welcome to the Lab!</h2>
-</section>
-<section id="best-practices" class="level2">
-<h2 class="anchored" data-anchor-id="best-practices">Best practices</h2>
-<p>Welcome to the <em>Biodiversity Futures lab</em> software development best practices guide! This is a short document outlining the best practices for developing software within the BFL, designed to get programmers up and running quickly, to make contributions.</p>
-<section id="code-style" class="level3">
-<h3 class="anchored" data-anchor-id="code-style">Code style</h3>
-<p>Use <a href="https://google.github.io/styleguide/Rguide.html">Google style guide for R</a>, which is itself a fork of the <a href="https://style.tidyverse.org/">tidyverse style guide</a>. This adds some sensible additions on top of the tidyverse style guide, such as using explicit returns from functions, and qualifying namespaces (e.g., always using the double colon syntax <code>purrr::map()</code>).</p>
-<p>If you want to use <code>{lintr}</code> to check adherence to the style guide, then check the package repos for the appropriate <code>.lintr</code> file.</p>
-<p>If writing C++ extensions (via <code>Rcpp</code>) then we use the <a href="https://google.github.io/styleguide/cppguide.html">Google style guide</a>.</p>
-</section>
-<section id="unit-testing" class="level3">
-<h3 class="anchored" data-anchor-id="unit-testing">Unit testing</h3>
-<p>For unit testing we use <code>{testthat}</code>. Follow the guides on the <a href="https://testthat.r-lib.org/index.html">website</a> to get set up in your package, with the use of <a href="https://github.com/r-lib/usethis">usethis</a>. If you’ve got <code>{usethis}</code> installed, then from the repo you want to test, you run <code>usethis:use_test("name")</code>.</p>
-<p>You can use testing outside of package development, for example, within the structure of a <code>{targets}</code> repo, through direct imports of your <code>R</code> code through the use of <code>source(...)</code>.</p>
-</section>
-<section id="version-control" class="level3">
-<h3 class="anchored" data-anchor-id="version-control">Version control</h3>
-<p>For version control, we use Git, with the repository hosted on GitHub. Depending on the circumstances, host the repo either on your own personal repo, or, on the BFL organisation repo. Set it to either private or public depending on the circumstances of the work.</p>
-<p>For branching we use the <a href="https://githubflow.github.io/">GitHub-flow</a> strategy. This is a simple branching model which is perfect for our small team (and as far as I can tell, is the standard for R package development).</p>
-<p>In essence, whenever you want to work on something new, create a new branch off <code>main</code> with a descriptive name, then when you are finished, create a <em>pull request</em> to merge it back into <code>main</code>. This allows us to work continuously in a fashion similar to many other R packages, without unnecessary overhead with separate <code>develop</code> and <code>main</code> branches.</p>
-<p>In more detail, this process is:</p>
+<p>As a lab we strive to develop methods and code that are <em>reproducible</em>, <em>user-friendly</em>, and follow software engineering <em>best practices</em>.</p>
+<p>In short we try and make sure:</p>
 <ol type="1">
-<li>When you want to work on something new, create a branch off <code>main</code>. This will have a descriptive name, such as <code>issue-32</code>, or <code>fix-projection-bug</code>, etc. Work on this branch until all your stuff is implemented. Be sure to constantly push to your development branch.</li>
-<li>When ready to be merged back into <code>main</code>, make a <em>pull request</em> and it will be merged back into <code>main</code>. When developing, make sure all the tests pass and (if applicable) any BII pipelines finish running to completion at 10km resolution.</li>
-<li>Repeat this process until ready for a release, adding features/fixes as we go.</li>
-<li>When ready for a release, we can simply tag the appropriate version number and create a release <em>on GitHub</em>.</li>
+<li>Our code is well-documented with a consistent style, with automated testing where appropriate.</li>
+<li>Git is used for all code, and any commercial code has strict code review procedures.</li>
+<li>We code collaboratively, roughly following a <a href="https://githubflow.github.io/">GitHub-flow</a> strategy.</li>
+<li>We <a href="https://r-pkgs.org/">package up</a> our code where possible, and try to make it easy for other team members to use.</li>
+<li>We try to follow the <a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix philosophy</a> as best we can (with large projects this can be tricky!).</li>
 </ol>
-<p><strong>NB:</strong> For branching we previously tried the <a href="https://nvie.com/posts/a-successful-git-branching-model/">Git-flow</a> branching strategy. However after trying this for 6 months, it added unnecessary complications to our workflow, as we typically don’t need to maintain older versions of the pipeline; we implement new fixes in a rolling-release, like most other R packages.</p>
-</section>
-<section id="issues" class="level3">
-<h3 class="anchored" data-anchor-id="issues">Issues</h3>
-<p>If something looks wrong, then make an issue. This will then be discussed and the team will prioritise and work on it as required. Once the fix has been implemented and merged into the <code>main</code> branch, then the issue will be closed.</p>
-</section>
-<section id="documentation" class="level3">
-<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
-<p>All functions that are written and committed should be documented. Follow the <code>tidyverse</code> style guide when writing this documentation. So the below for a quick-reference example:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#' Run a specific target and run the pipeline</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">#' @details Run a single target, after invalidating the target. Rebuilds the</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">#'   "_targets.Rmd" to re-generate all the necessary running stuff.</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#'</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param target A string giving the target to be profiled.</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">#' @param file_out A string giving the location to save the profile output.</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>RunTarget <span class="ot">&lt;-</span> <span class="cf">function</span>(target, <span class="at">pipe_file =</span> <span class="st">"_targets.Rmd"</span>) {</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  rmarkdown<span class="sc">::</span><span class="fu">render</span>(pipe_file)</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">message</span>(<span class="st">"Warning! We are invalidating the target now!"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  targets<span class="sc">::</span><span class="fu">tar_invalidate</span>(target)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  targets<span class="sc">::</span><span class="fu">tar_invalidate</span>(target)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  targets<span class="sc">::</span><span class="fu">tar_make</span>(target, <span class="at">callr_function =</span> <span class="cn">NULL</span>, <span class="at">use_crew =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>For full details see <a href="https://style.tidyverse.org/documentation.html">here</a>.</p>
-</section>
-<section id="code-reviews" class="level3">
-<h3 class="anchored" data-anchor-id="code-reviews">Code reviews</h3>
-<p>When doing code reviews we follow the <a href="https://google.github.io/eng-practices/review/">Google code review guidelines</a>. Borrowed from this guide (and the NHM Dev wiki), in short, we suggest the following things be asked during a code review:</p>
-<ul>
-<li><em>Design</em>: Is the code well-designed and appropriate for your system?</li>
-<li><em>Functionality</em>: Does the code behave as the author likely intended? Is the way the code behaves good for its users?</li>
-<li><em>Complexity</em>: Could the code be made simpler? Would another developer be able to easily understand and use this code when they come across it in the future?</li>
-<li><em>Tests</em>: Does the code have correct and well-designed automated tests?</li>
-<li><em>Naming</em>: Did the developer choose clear names for variables, classes, methods, etc.?</li>
-<li><em>Comments</em>: Are the comments clear and useful?</li>
-<li><em>Style</em>: Does the code follow our style guides?</li>
-<li><em>Documentation</em>: Did the developer also update relevant documentation?</li>
-</ul>
-<p>You can request a code review on any code you would like to be reviewed, be it a script, a package, or an <code>Rmarkdown</code> file.</p>
-<section id="reviewing-pull-requests" class="level4">
-<h4 class="anchored" data-anchor-id="reviewing-pull-requests">Reviewing pull requests</h4>
-<p>When reviewing a pull request the following guidelines are helpful. Unless the changes are very minor, try to pull the code and at least run the tests on your own machine. When looking at the changes, use the following as a general guideline:</p>
-<ul>
-<li>Is it clear what the feature/fix the PR is addressing?</li>
-<li>Does the code pass tests when run locally?</li>
-<li>Is the style guide followed? Is the code clean and well-documented?</li>
-<li>If there are new package dependencies: are they popular/well-maintained?</li>
-<li>If there are any architectural changes: are they sound choices?</li>
-<li>If it is a scientific contribution: is the methodology sensible?</li>
-</ul>
-<p>Mechanically here is a guide to what to do when reviewing a pull request (using Git on the command line, from the base directory of the repository):</p>
-<ol type="1">
-<li>Checkout the branch that is going to be merged: <code>git checkout branch_to_be_merged</code>.</li>
-<li>Pull the changes from the origin repository <code>git pull origin</code>. You should see some file deltas here.</li>
-<li>(If using <code>{renv}</code>) Update the environment with <code>renv::restore()</code> from within R.</li>
-<li>Run the tests: if within a package just run <code>devtools::test()</code>, or if not run <code>testthat::test_dir()</code>.</li>
-</ol>
-<p>Having done these steps we have a minimal procedure to check that the code runs and passes the tests on another machine. From here we can check the above guidelines to be sure that the changes are sensible.</p>
-</section>
-</section>
-<section id="rstudio-ides" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio-ides">Rstudio (IDEs)</h3>
-<p>You can use any IDE you want to work with. Generally, however, we have the most experience with using just Rstudio or Rstudio with an older-school editor such as Vim or Emacs.</p>
-</section>
-<section id="miscellanea" class="level3">
-<h3 class="anchored" data-anchor-id="miscellanea">Miscellanea</h3>
-<ul>
-<li>In a perfect world seperate functions for analysis from the analysis piepline itself. <strong>Turn analysis functions into a package, stored separate from the actual data analysis pipeline</strong> Then you can unit test them, share them with other more easily, and seperate out <em>package development</em> from <em>data analysis</em>.</li>
-<li>Use <code>{targets}</code> when writing data analysis pipelines to keep track of dependencies and avoid wasting compute resources.</li>
-<li>Use <code>{logger}</code> or <code>{logr}</code> for logging. When adding logging to a project, a good strategy is to just replace comments with logging calls.</li>
-<li>We use <code>{assertthat}</code> for assertions to program defensively. This is very useful in functions which may or may not be tested, to sanity check that you are doing what you want to be doing.</li>
-<li><strong>TODO:</strong> Continuous integration (CI)</li>
-</ul>
+<p>Due to our Commercial, Policy, and Academic interests the need for a well-established, tasteful approach to development is amplified as no longer does our work need to translate across a single of these domains, but across all three!</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
