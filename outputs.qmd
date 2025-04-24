@@ -4,4 +4,24 @@ title: "Outputs"
 
 ## Code
 
+### - Biodiversity Intactness Index tutorial
+
+[The Biodiversity Intactness Index (BII) tutorial](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems).
+
+## Data
+
+### - BII data
+
+The Biodiversity Intactness Index - country, region and global-level summaries for the year 1970 to 2050 under various scenarios is available [here](https://data.nhm.ac.uk/dataset/bii-bte)
+
+### - PREDICTS project data releases
+
+The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project makes its open data available on the Natural History Museum Data Portal, with public releases in [2016](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database-v1-1) and [2022](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022).
+
 ## Talks
+
+## Video
+
+### - Why should we be worried about biodiversity loss? (Celeste de Knock)
+
+Find out from the Biodiversity Future Lab past and present members why biodiversity is a cornerstone of life on planet Earth and why we should care for it. Watch the video [here](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
