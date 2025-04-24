@@ -3,7 +3,7 @@ title: "About"
 from: markdown+emoji
 ---
 
-The *Biodiversity Futures Lab* is based at the Natural History Museum in London. 
+The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 
 ## Our Projects
 
@@ -11,17 +11,16 @@ The Biodiversity Futures Lab at the Natural History Museum in London explores ho
 
 ## Our Team
 
-
 |                                                                 | Name & Role                                                          | Links                                                                                                      |
 |:---------------------------------------------------------------:|----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| ![](images/andy.jpg){width=80px style="border-radius: 50%;"}    | **Professor Andy Purvis**  <br> *Research Leader and Lab Co-Lead*    | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
+| ![](images/andy.jpg){width=80px style="border-radius: 50%;"}    | **Professor Andy Purvis**  <br> *Research Leader and Lab Co-Lead*    | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/andypurvis)         |
 | ![](images/adriana.jpg){width=80px style="border-radius: 50%;"} | **Dr Adriana De Palma**  <br> *Principal Researcher and Lab Co-Lead* | [{{<fa laptop>}}](https://adrianadepalma.com/) [{{<fa brands github>}}](https://github.com/adrianadepalma) |
-| ![](images/sara.png){width=80px style="border-radius: 50%;"}    | **Sara Contu**  <br> *Biodiversity Data Supervisor*                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/profile.png){width=80px style="border-radius: 50%;"} | **Dr Connor Duffin**  <br> *Research Software Engineer*              | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/izzi.png){width=80px style="border-radius: 50%;"}    | **Izzi Strudwick**  <br> *Project Coordinator*                       | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/profile.png){width=80px style="border-radius: 50%;"} | **Dr Alexa Varah**  <br> *Postdoctoral Researcher*                   | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/profile.png){width=80px style="border-radius: 50%;"} | **Dr Patrick Walkden**  <br> *Postdoctoral Researcher*               | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
-| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://www.google.com/)               |
+| ![](images/sara.png){width=80px style="border-radius: 50%;"}    | **Sara Contu**  <br> *Biodiversity Data Supervisor*                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sarac6)             |
+| ![](images/connor.jpg){width=80px style="border-radius: 50%;"}  | **Dr Connor Duffin**  <br> *Research Software Engineer*              | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/connor-duffin)      |
+| ![](images/izzi.png){width=80px style="border-radius: 50%;"}    | **Izzi Strudwick**  <br> *Project Coordinator*                       | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                   |
+| ![](images/profile.png){width=80px style="border-radius: 50%;"} | **Dr Alexa Varah**  <br> *Postdoctoral Researcher*                   | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/alexavarah)         |
+| ![](images/profile.png){width=80px style="border-radius: 50%;"} | **Dr Patrick Walkden**  <br> *Postdoctoral Researcher*               | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/pwalkden95)         |
+| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                   |
+| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                   |
 
-: {tbl-colwidths="[25,50,25]"}
+: {tbl-colwidths="[25,40,25]"}
