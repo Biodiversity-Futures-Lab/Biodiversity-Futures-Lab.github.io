@@ -1,8 +1,9 @@
 ---
 title: "About"
+from: markdown+emoji
 ---
 
-The *Biodiversity Futures Lab* is based at the Natural History Museum in London. 
+The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 
 ## Our Projects
 
@@ -10,14 +11,16 @@ The Biodiversity Futures Lab at the Natural History Museum in London explores ho
 
 ## Our Team
 
-The following very clever people work in the BFL:
+|                                                                 | Name & Role                                                          | Links                                                                                                         |
+|:---------------------------------------------------------------:|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| ![](images/andy.jpg){width=80px style="border-radius: 50%;"}    | **Professor Andy Purvis**  <br> *Research Leader and Lab Co-Lead*    | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/andypurvis)            |
+| ![](images/adriana.jpg){width=80px style="border-radius: 50%;"} | **Dr Adriana De Palma**  <br> *Principal Researcher and Lab Co-Lead* | [{{<fa laptop>}}](https://adrianadepalma.com/) [{{<fa brands github>}}](https://github.com/adrianadepalma)    |
+| ![](images/sara.png){width=80px style="border-radius: 50%;"}    | **Sara Contu**  <br> *Biodiversity Data Supervisor*                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sarac6)                |
+| ![](images/connor.jpg){width=80px style="border-radius: 50%;"}  | **Dr Connor Duffin**  <br> *Research Software Engineer*              | [{{<fa laptop>}}](https://connor-duffin.github.io) [{{<fa brands github>}}](https://github.com/connor-duffin) |
+| ![](images/izzi.png){width=80px style="border-radius: 50%;"}    | **Izzi Strudwick**  <br> *Project Coordinator*                       | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                      |
+| ![](images/alexa.jpg){width=80px style="border-radius: 50%;"}   | **Dr Alexa Varah**  <br> *Postdoctoral Researcher*                   | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/alexavarah)            |
+| ![](images/patrick.jpg){width=80px style="border-radius: 50%;"} | **Dr Patrick Walkden**  <br> *Postdoctoral Researcher*               | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/pwalkden95)            |
+| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/justin-isip)           |
+| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sophietudge)           |
 
-- Professor Andy Purvis: Research Leader
-- Dr Adriana De Palma: Principal Researcher
-- Sara Contu: Biodiversity Data Supervisor
-- Izzi Strudwick: Project Coordinator
-- Dr Connor Duffin: Research Software Engineer
-- Dr Alexa Varah: Postdoctoral Researcher
-- Dr Patrick Walkden: Postdoctoral Researcher
-- Justin Isip: PhD student
-- Sophie Jane Tudge: PhD student
+: {tbl-colwidths="[25,40,25]"}
