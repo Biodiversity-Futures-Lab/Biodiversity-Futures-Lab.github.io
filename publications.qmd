@@ -1,3 +1,200 @@
 ---
 title: "Publications"
 ---
+
+```{r orcid-works, echo = FALSE, output = FALSE, warning = FALSE}
+
+lab_member_details <- rbind(
+  c("Andy Purvis", "0000-0002-8609-6204"),
+  c("Adriana De Palma", "0000-0002-5345-4917"),
+  c("Victoria J. Burton", "0000-0003-0122-3292"),
+  c("Alexa Varah", "0000-0002-5024-0737"),
+  c("Sophie Jane Tudge", "0000-0002-0447-9448"),
+  c("Justin E. Isip", "0000-0002-9686-8888"),
+  c("Patrick A. Walkden", "0000-0002-5922-8777"),
+  c("Sara Contu", "0000-0002-9070-1091")
+  # Connor?
+) |>
+  as.data.frame() |>
+  setNames(c("name", "orcid"))
+
+# get all works from orcID using open alex
+works_from_orcids <- openalexR::oa_fetch(
+  entity = "works",
+  author.orcid = lab_member_details$orcid,
+  verbose = TRUE,
+  output = "dataframe",
+  abstract = FALSE
+)
+
+distinct_works <- works_from_orcids  |>
+  # we don't actually have any retracted works in this list
+  # but let's remove them just in case
+  dplyr::filter(is_retracted == FALSE) |>
+  # keep only the unique references
+  dplyr::distinct(tolower(display_name), .keep_all = TRUE) |>
+  # sort with the most recent publications first
+  dplyr::arrange(dplyr::desc(publication_year))
+```
+```{r add-topic, echo = FALSE, cache = TRUE}
+
+# get a vector of topics for each reference
+all_topics <- lapply(distinct_works$topics, function(x) {
+  
+  if("display_name" %in% names(x)){
+    x[x$type == "field", "display_name"] |>
+      dplyr::pull(display_name) |>
+      stringr::str_replace_all(" ", "_") |>
+      unique()
+  } else {
+    "no_topic"
+  }
+  
+})
+
+# find out which references have no topic
+no_topics <- which(all_topics == "no_topic")
+# only a few of these look relevant
+# (Adapting to a diverse world
+# Living Planet Report 2018: Aiming Higher
+# Chapter 2.2 Status and Trends –Nature)
+
+# topics to remove
+to_remove <- c(
+  which(all_topics %in% c(  
+    # incorrect datasets
+    "Health_Professions", "Medicine", "Engineering",
+    # datasets that we'll list in the outputs section
+    "Computer_Science")
+  ), 
+  grep("schistosomes in baboons", distinct_works$title),
+  # remove based on dois and urls
+  which(distinct_works$landing_page_url %in% c(
+    "https://doi.org/10.5519/0000082",
+    "https://doi.org/10.5194/gmd-2018-115-supplement",
+    "https://wiley.figshare.com/articles/dataset/Supplement_1_Kress_phylomatic_and_control_phylogenies_in_Newick_format_used_in_the_analyses_/3558171",
+    "https://doi.org/10.6084/m9.figshare.3531875",
+    "https://doi.org/10.6084/m9.figshare.3558174",
+    "https://doi.org/10.6084/m9.figshare.781231"
+  )),
+  which(distinct_works$doi %in% c(
+    "https://doi.org/10.5519/0000082",
+    "https://doi.org/10.5194/gmd-2018-115-supplement",
+    "https://wiley.figshare.com/articles/dataset/Supplement_1_Kress_phylomatic_and_control_phylogenies_in_Newick_format_used_in_the_analyses_/3558171",
+    "https://doi.org/10.6084/m9.figshare.3531875",
+    "https://doi.org/10.6084/m9.figshare.3558174",
+    "https://doi.org/10.6084/m9.figshare.781231"
+  ))
+) |>
+  unique()
+
+
+distinct_works <- distinct_works[-to_remove, ]
+
+```
+
+
+
+```{r formatted-references, echo = FALSE, cache = TRUE}
+
+# furnction to format OpenAlex outputs into a Harvard-style reference
+GetFormattedReference <- function(reference, lab_member_details) {
+  
+  # extract the authors
+  authors <- lapply(reference$authorships, function(x) {
+    x$display_name
+  })
+  # transform into a vector
+  authors <- unlist(authors)
+  
+  # embolden lab author
+  authors[authors %in% lab_member_details$name] <- gluedown::md_bold(
+    authors[authors %in% lab_member_details$name]
+  )
+  
+  # make a full author list for the reference
+  if(length(authors) == 1) {
+    author_list <- authors
+  } else if (length(authors) == 2) {
+    author_list <- paste0(authors, collapse = " & ")
+  } else {
+    author_list <- paste0(authors[1:length(authors) - 1], collapse = ", ") |>
+      paste(" & ", authors[length(authors)])
+  }
+  
+  # extract the doi or url
+  if(!is.na(reference$doi)) {
+    link <- gluedown::md_autolink(reference$doi)
+  } else if (!is.na(reference$source_id)) {
+    link <- gluedown::md_autolink(reference$source_id)
+  } else {
+    link <- gluedown::md_autolink(reference$landing_page_url)
+  }
+  
+  # transform the title to sentence case if needed
+  title <- ifelse(
+    reference$title == toupper(reference$title),
+    stringr::str_to_sentence(reference$title),
+    reference$title
+  ) |>
+    paste0(", ")
+  
+  # get the journal title if there is one
+  if(is.na(reference$source_display_name)) {
+    source <- ""
+  } else {
+    # transform to sentence case if needed
+    if(reference$source_display_name == toupper(reference$source_display_name)) {
+      source <- stringr::str_to_sentence(reference$source_display_name) |>
+        gluedown::md_italic() |>
+        paste0(", ")
+    } else {
+      source <- reference$source_display_name |>
+        gluedown::md_italic() |>
+        paste0(", ")
+    }
+  }
+  
+  # format the year
+  year <- paste0(" (", reference$publication_year, "). ")
+  
+  # add the relevant information together
+  formatted_ref <- paste0(
+    author_list,
+    year,
+    title,
+    source,
+    link
+  )
+  
+  # return the formatted reference
+  return(formatted_ref)
+}
+
+# set up an empty vector to hold the results
+distinct_references <- rep(NA, nrow(distinct_works))
+
+# get the formatted reference for each open Alex entry
+for(i in 1:length(distinct_references)) {
+  distinct_references[i] <- GetFormattedReference(
+    distinct_works[i, ],
+    lab_member_details = lab_member_details
+  )
+}
+
+```
+
+
+```{r round-down, echo = FALSE}
+RoundDown100 <- function(x) {
+  return(floor(x / 100) * 100)
+}
+```
+
+
+The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package. Our current lab members combined have written over `r nrow(distinct_works) |> RoundDown100()` publications, cited over `r sum(distinct_works$cited_by_count) |> RoundDown100() |> scales::number(big.mark = ",")` times.
+
+```{r render-references, output = "asis", echo = FALSE}
+gluedown::md_paragraph(distinct_references)
+```
+
