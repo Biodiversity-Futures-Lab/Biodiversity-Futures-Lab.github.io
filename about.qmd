@@ -7,7 +7,7 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 
 ## Our Projects
 
-The Biodiversity Futures Lab at the Natural History Museum in London explores how environmental change affects biodiversity using cutting-edge research. Projects include studying the effects of ocean acidification on marine bryozoans, predicting climate-driven changes in body size, and using AI to analyze plant traits for biodiversity indicators. Additionally, the lab employs genomic tools to accelerate the discovery of parasitoid wasps, enhancing their potential as biocontrol agents. By integrating advanced technologies, the lab aims to improve our understanding of biodiversity and its future.
+The Biodiversity Futures Lab at the Natural History Museum in London explores how environmental change affects biodiversity using cutting-edge research. Projects include studying the effects of human pressures on biodiversity. By integrating advanced technologies, the lab aims to improve our understanding of biodiversity and its future.
 
 ## Our Team
 
