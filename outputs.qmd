@@ -2,7 +2,7 @@
 title: "Outputs"
 ---
 
-# 🛠️ Code
+## 🛠️ Code
 
 ::: {.card style="width: 100%;"}
 ### Biodiversity Intactness Index tutorial
@@ -18,7 +18,7 @@ This package *predictsr* retrieves all datasets that are openly available on the
 
 ------------------------------------------------------------------------
 
-# 📊 Data
+## 📊 Data
 
 ::: {.card style="width: 100%;"}
 ### Biodiversity Intactness Index (BII) data
@@ -34,7 +34,7 @@ The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestri
 
 ------------------------------------------------------------------------
 
-# 🎙️ Talks
+## 🎙️ Talks
 
 ::: {.card style="width: 100%;"}
 Come meet the team members at the upcoming conference.
@@ -42,7 +42,7 @@ Come meet the team members at the upcoming conference.
 
 ------------------------------------------------------------------------
 
-# 🎥 Video
+## 🎥 Video
 
 ::: {.card style="width: 100%;"}
 ### Why should we be worried about biodiversity loss? (Celeste de Knock)
