@@ -8,7 +8,7 @@ title: "Outputs"
 
 [**The Biodiversity Intactness Index (BII) tutorial**](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.
 
-## Package: `predictsr`
+## `predictsr` R package
 
 The `predictsr` package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. Available on CRAN: [predictsr](https://cran.r-project.org/web/packages/predictsr/index.html)
 
@@ -18,7 +18,7 @@ The `predictsr` package retrieves PREDICTS project datasets openly available on 
 
 ## Biodiversity Intactness Index (BII) data
 
-Country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, are available [here](https://data.nhm.ac.uk/dataset/bii-bte)
+Explore country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, are available [here](https://data.nhm.ac.uk/dataset/bii-bte)
 
 ## PREDICTS project data releases
 
@@ -31,7 +31,7 @@ The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestri
 
 # 🎙️ Talks
 
-Come meet the team members at upcoming conferences.
+Meet the team members at upcoming conferences. Stay tuned for more information on their talks and presentations.
 
 ---
 
@@ -39,5 +39,4 @@ Come meet the team members at upcoming conferences.
 
 ## Why should we be worried about biodiversity loss? (Celeste de Knock)
 
-Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care.\
-🎬 [Watch the video](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
+Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. 🎬 [Watch the video](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
