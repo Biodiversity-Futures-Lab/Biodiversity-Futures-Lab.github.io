@@ -2,52 +2,41 @@
 title: "Outputs"
 ---
 
-## 🛠️ Code
+# 🛠️ Code
 
-::: {.card style="width: 100%;"}
-### Biodiversity Intactness Index tutorial
+## Biodiversity Intactness Index tutorial
 
-[The Biodiversity Intactness Index (BII) tutorial](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems).
+[**The Biodiversity Intactness Index (BII) tutorial**](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.
 
-------------------------------------------------------------------------
+## `predictsr` R package
 
-### Package: predictsr
+The `predictsr` package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. Available on CRAN: [predictsr](https://cran.r-project.org/web/packages/predictsr/index.html)
 
-This package *predictsr* retrieves all datasets that are openly available on the Natural History Museum Data Portal, specifically from the data releases published in 2016 and 2022. The package is now available on CRAN: [predictsr](https://cran.r-project.org/web/packages/predictsr/index.html)
-:::
+---
 
-------------------------------------------------------------------------
+# 📊 Data
 
-## 📊 Data
+## Biodiversity Intactness Index (BII) data
 
-::: {.card style="width: 100%;"}
-### Biodiversity Intactness Index (BII) data
+Explore country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, are available [here](https://data.nhm.ac.uk/dataset/bii-bte)
 
-The Biodiversity Intactness Index - country, region and global-level summaries for the year 1970 to 2050 under various scenarios is available [here](https://data.nhm.ac.uk/dataset/bii-bte)
+## PREDICTS project data releases
 
-------------------------------------------------------------------------
+The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project provides open access data on terrestrial biodiversity responses to land-use change. The data is available on the Natural History Museum Data Portal:
 
-### PREDICTS project data releases
+-   [2016 data release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database-v1-1)
+-   [2022 data release](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
 
-The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project makes its open data available on the Natural History Museum Data Portal, with public releases in [2016](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database-v1-1) and [2022](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022).
-:::
+---
 
-------------------------------------------------------------------------
+# 🎙️ Talks
 
-## 🎙️ Talks
+Meet the team members at upcoming conferences. Stay tuned for more information on their talks and presentations.
 
-::: {.card style="width: 100%;"}
-Come meet the team members at the upcoming conference.
-:::
+---
 
-------------------------------------------------------------------------
+# 🎥 Video
 
-## 🎥 Video
+## Why should we be worried about biodiversity loss? (Celeste de Knock)
 
-::: {.card style="width: 100%;"}
-### Why should we be worried about biodiversity loss? (Celeste de Knock)
-
-Find out from the Biodiversity Future Lab past and present members why biodiversity is a cornerstone of life on planet Earth and why we should care for it. Watch the video [here](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
-:::
-
-------------------------------------------------------------------------
+Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. 🎬 [Watch the video](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
