@@ -3,24 +3,151 @@ title: "About"
 from: markdown+emoji
 ---
 
-The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
-
-## Our Projects
-
-The Biodiversity Futures Lab at the Natural History Museum in London explores how environmental change affects biodiversity using cutting-edge research. Projects include studying the effects of human pressures on biodiversity. By integrating advanced technologies, the lab aims to improve our understanding of biodiversity and its future.
+The *Biodiversity Futures Lab* is based at the Natural History Museum in London. We research how environmental and land use change effect biodiversity change, developing new modelling approaches and tools to better understand and predict biodiversity trends.
 
 ## Our Team
 
-|                                                                 | Name & Role                                                          | Links                                                                                                         |
-|:---------------------------------------------------------------:|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| ![](images/andy.jpg){width=80px style="border-radius: 50%;"}    | **Professor Andy Purvis**  <br> *Research Leader and Lab Co-Lead*    | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/andypurvis)            |
-| ![](images/adriana.jpg){width=80px style="border-radius: 50%;"} | **Dr Adriana De Palma**  <br> *Principal Researcher and Lab Co-Lead* | [{{<fa laptop>}}](https://adrianadepalma.com/) [{{<fa brands github>}}](https://github.com/adrianadepalma)    |
-| ![](images/sara.png){width=80px style="border-radius: 50%;"}    | **Sara Contu**  <br> *Biodiversity Data Supervisor*                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sarac6)                |
-| ![](images/connor.jpg){width=80px style="border-radius: 50%;"}  | **Dr Connor Duffin**  <br> *Research Software Engineer*              | [{{<fa laptop>}}](https://connor-duffin.github.io) [{{<fa brands github>}}](https://github.com/connor-duffin) |
-| ![](images/izzi.png){width=80px style="border-radius: 50%;"}    | **Izzi Strudwick**  <br> *Project Coordinator*                       | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/)                      |
-| ![](images/alexa.jpg){width=80px style="border-radius: 50%;"}   | **Dr Alexa Varah**  <br> *Postdoctoral Researcher*                   | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/alexavarah)            |
-| ![](images/patrick.jpg){width=80px style="border-radius: 50%;"} | **Dr Patrick Walkden**  <br> *Postdoctoral Researcher*               | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/pwalkden95)            |
-| ![](images/justin.jpg){width=80px style="border-radius: 50%;"}  | **Justin Isip**  <br> *PhD Student*                                  | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/justin-isip)           |
-| ![](images/sophie.png){width=80px style="border-radius: 50%;"}  | **Sophie Jane Tudge**  <br> *PhD Student*                            | [{{<fa laptop>}}](https://www.google.com/) [{{<fa brands github>}}](https://github.com/sophietudge)           |
+::: {.team-grid}
 
-: {tbl-colwidths="[25,40,25]"}
+::: {.team-member}
+<img src="images/adriana.jpg" alt="Photo of Dr Adriana De Palma" class="team-photo" />
+
+### Dr Adriana De Palma
+*Principal Researcher and Lab Co-Lead*
+
+<div class="team-links">
+<a href="https://adrianadepalma.com/" class="icon-link" aria-label="Website for Adriana De Palma">
+  {{< fa globe >}}<span class="sr-only">Website</span>
+</a>
+<a href="https://github.com/adrianadepalma" class="icon-link" aria-label="GitHub">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+<a href="https://scholar.google.com/citations?user=r4hinbgAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">LinkedIn</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/andy.jpg" alt="Photo of Professor Andy Purvis" class="team-photo" />
+
+### Professor Andy Purvis
+*Research Leader and Lab Co-Lead*
+
+<div class="team-links">
+<a href="https://github.com/AndyPurvis" class="icon-link" aria-label="GitHub profile for Andy Purvis">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+<a href="https://scholar.google.co.uk/citations?user=EpZVv-cAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">LinkedIn</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/sara.png" alt="Photo of Sara Contu" class="team-photo" />
+
+### Sara Contu
+*Biodiversity Data Supervisor*
+
+<div class="team-links">
+<a href="https://github.com/sarac6" class="icon-link" aria-label="GitHub profile for Sara Contu">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/connor.jpg" alt="Photo of Dr Connor Duffin" class="team-photo" />
+
+### Dr Connor Duffin
+*Research Engineer*
+
+<div class="team-links">
+<a href="https://connor-duffin.github.io" class="icon-link" aria-label="Website for Connor Duffin">
+  {{< fa globe >}}<span class="sr-only">Website</span>
+</a>
+<a href="https://github.com/connor-duffin" class="icon-link" aria-label="GitHub profile for Connor Duffin">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+<a href="https://scholar.google.co.uk/citations?user=vcinYsEAAAAJ&hl=en&oi=ao" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">Google Scholar</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/charlotte.jpg" alt="Charlotte McGinty" class="team-photo" />
+
+### Charlotte McGinty
+*Geospatial Analyst*
+
+<div class="team-links">
+<a href="https://github.com/charlotte-r-mcginty" class="icon-link" aria-label="GitHub profile for Izzi Strudwick">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/alexa.jpg" alt="Photo of Dr Alexa Varah" class="team-photo" />
+
+### Dr Alexa Varah
+*Postdoctoral Researcher*
+
+<div class="team-links">
+<a href="https://www.google.com/" class="icon-link" aria-label="Website for Alexa Varah">
+  {{< fa globe >}}<span class="sr-only">Website</span>
+</a>
+<a href="https://github.com/" class="icon-link" aria-label="GitHub profile for Alexa Varah">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+<a href="https://scholar.google.com/citations?user=5QNg9zQAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">Scholar</span>
+</a>
+<a href="https://uk.linkedin.com/in/alexa-varah-a2025580" class="icon-link" aria-label="LinkedIn profile for Alexa Varah">
+  {{< fa brands linkedin >}}<span class="sr-only">LinkedIn</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/patrick.jpg" alt="Photo of Dr Patrick Walkden" class="team-photo" />
+
+### Dr Patrick Walkden
+*Postdoctoral Researcher*
+
+<div class="team-links">
+<a href="https://pwalkden95.github.io/" class="icon-link" aria-label="Website for Patrick Walkden">
+  {{< fa globe >}}<span class="sr-only">Website</span>
+</a>
+<a href="https://github.com/PWalkden95" class="icon-link" aria-label="GitHub profile for Patrick Walkden">
+  {{< fa brands github >}}<span class="sr-only">GitHub</span>
+</a>
+<a href="https://scholar.google.com/citations?user=M_huBoUAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">Scholar</span>
+</a>
+</div>
+:::
+
+::: {.team-member}
+<img src="images/justin.jpg" alt="Photo of Justin Isip" class="team-photo" />
+
+### Justin Isip
+*PhD Student*
+
+<div class="team-links">
+</div>
+:::
+
+::: {.team-member}
+<img src="images/sophie.png" alt="Photo of Sophie Jane Tudge" class="team-photo" />
+
+### Sophie Jane Tudge
+*PhD Student*
+
+<div class="team-links">
+</div>
+:::
+
+:::
