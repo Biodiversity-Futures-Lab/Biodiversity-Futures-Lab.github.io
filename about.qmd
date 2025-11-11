@@ -12,8 +12,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/adriana.jpg" alt="Photo of Dr Adriana De Palma" class="team-photo" />
 
-### Dr Adriana De Palma
-*Principal Researcher and Lab Co-Lead*
+**Dr Adriana De Palma**
+
+*Principal Researcher and Lab Co-Lead of BFL*
 
 <div class="team-links">
 <a href="https://adrianadepalma.com/" class="icon-link" aria-label="Website for Adriana De Palma">
@@ -31,8 +32,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/andy.jpg" alt="Photo of Professor Andy Purvis" class="team-photo" />
 
-### Professor Andy Purvis
-*Research Leader and Lab Co-Lead*
+**Professor Andy Purvis**
+
+*Research Leader and Lab Co-Lead of BFL*
 
 <div class="team-links">
 <a href="https://github.com/AndyPurvis" class="icon-link" aria-label="GitHub profile for Andy Purvis">
@@ -47,8 +49,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/sara.png" alt="Photo of Sara Contu" class="team-photo" />
 
-### Sara Contu
-*Biodiversity Data Supervisor*
+**Sara Contu**
+
+*Biodiversity Data Supervisor, lead developer of the PREDICTS database.*
 
 <div class="team-links">
 <a href="https://github.com/sarac6" class="icon-link" aria-label="GitHub profile for Sara Contu">
@@ -60,8 +63,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/connor.jpg" alt="Photo of Dr Connor Duffin" class="team-photo" />
 
-### Dr Connor Duffin
-*Research Engineer*
+**Dr Connor Duffin**
+
+*Research Engineer, specialising in software development, HPC, and modelling.*
 
 <div class="team-links">
 <a href="https://connor-duffin.github.io" class="icon-link" aria-label="Website for Connor Duffin">
@@ -79,8 +83,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/charlotte.jpg" alt="Charlotte McGinty" class="team-photo" />
 
-### Charlotte McGinty
-*Geospatial Analyst*
+**Charlotte McGinty**
+
+*Geospatial Analyst, geospatial modelling/data team lead.*
 
 <div class="team-links">
 <a href="https://github.com/charlotte-r-mcginty" class="icon-link" aria-label="GitHub profile for Izzi Strudwick">
@@ -92,8 +97,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/alexa.jpg" alt="Photo of Dr Alexa Varah" class="team-photo" />
 
-### Dr Alexa Varah
-*Postdoctoral Researcher*
+**Dr Alexa Varah**
+
+*Postdoctoral Researcher, working on biodiversity conservation.*
 
 <div class="team-links">
 <a href="https://www.google.com/" class="icon-link" aria-label="Website for Alexa Varah">
@@ -105,17 +111,15 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 <a href="https://scholar.google.com/citations?user=5QNg9zQAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
   {{< fa brands google-scholar >}}<span class="sr-only">Scholar</span>
 </a>
-<a href="https://uk.linkedin.com/in/alexa-varah-a2025580" class="icon-link" aria-label="LinkedIn profile for Alexa Varah">
-  {{< fa brands linkedin >}}<span class="sr-only">LinkedIn</span>
-</a>
 </div>
 :::
 
 ::: {.team-member}
 <img src="images/patrick.jpg" alt="Photo of Dr Patrick Walkden" class="team-photo" />
 
-### Dr Patrick Walkden
-*Postdoctoral Researcher*
+**Dr Patrick Walkden**
+
+*Postdoctoral Researcher, projecting biodiversity models with refined land-use.*
 
 <div class="team-links">
 <a href="https://pwalkden95.github.io/" class="icon-link" aria-label="Website for Patrick Walkden">
@@ -133,7 +137,8 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/justin.jpg" alt="Photo of Justin Isip" class="team-photo" />
 
-### Justin Isip
+**Justin Isip**
+
 *PhD Student*
 
 <div class="team-links">
@@ -143,7 +148,8 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 ::: {.team-member}
 <img src="images/sophie.png" alt="Photo of Sophie Jane Tudge" class="team-photo" />
 
-### Sophie Jane Tudge
+**Sophie Jane Tudge**
+
 *PhD Student*
 
 <div class="team-links">
