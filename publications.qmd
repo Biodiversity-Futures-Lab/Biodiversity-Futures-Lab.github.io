@@ -95,7 +95,7 @@ distinct_works <- distinct_works[-to_remove, ]
 
 
 
-```{r formatted-references, echo = FALSE, cache = TRUE}
+```{r formatted-references, echo = FALSE}
 
 # furnction to format OpenAlex outputs into a Harvard-style reference
 GetFormattedReference <- function(reference, lab_member_details) {
