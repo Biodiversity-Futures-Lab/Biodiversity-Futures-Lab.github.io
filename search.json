@@ -11,42 +11,7 @@
     "href": "outputs.html",
     "title": "Outputs",
     "section": "",
-    "text": "The Biodiversity Intactness Index (BII) tutorial gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.\n\n\n\nThe predictsr package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. Available on CRAN: predictsr"
-  },
-  {
-    "objectID": "outputs.html#biodiversity-intactness-index-tutorial",
-    "href": "outputs.html#biodiversity-intactness-index-tutorial",
-    "title": "Outputs",
-    "section": "",
-    "text": "The Biodiversity Intactness Index (BII) tutorial gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data."
-  },
-  {
-    "objectID": "outputs.html#predictsr-r-package",
-    "href": "outputs.html#predictsr-r-package",
-    "title": "Outputs",
-    "section": "",
-    "text": "The predictsr package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. Available on CRAN: predictsr"
-  },
-  {
-    "objectID": "outputs.html#biodiversity-intactness-index-bii-data",
-    "href": "outputs.html#biodiversity-intactness-index-bii-data",
-    "title": "Outputs",
-    "section": "Biodiversity Intactness Index (BII) data",
-    "text": "Biodiversity Intactness Index (BII) data\nExplore country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, are available here"
-  },
-  {
-    "objectID": "outputs.html#predicts-project-data-releases",
-    "href": "outputs.html#predicts-project-data-releases",
-    "title": "Outputs",
-    "section": "PREDICTS project data releases",
-    "text": "PREDICTS project data releases\nThe PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project provides open access data on terrestrial biodiversity responses to land-use change. The data is available on the Natural History Museum Data Portal:\n\n2016 data release\n2022 data release"
-  },
-  {
-    "objectID": "outputs.html#why-should-we-be-worried-about-biodiversity-loss-celeste-de-knock",
-    "href": "outputs.html#why-should-we-be-worried-about-biodiversity-loss-celeste-de-knock",
-    "title": "Outputs",
-    "section": "Why should we be worried about biodiversity loss? (Celeste de Knock)",
-    "text": "Why should we be worried about biodiversity loss? (Celeste de Knock)\nFind out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. 🎬 Watch the video"
+    "text": "Code\n\nThe Biodiversity Intactness Index (BII) tutorial gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.\npredictsr R package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. It is available on CRAN: predictsr.\n\n\n\nData\n\nBiodiversity Intactness Index (BII) summaries, providing country, region, and global-level BII summaries from 1970 to 2050, under various scenarios.\nPREDICTS project data releases: The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project provides open access data on terrestrial biodiversity responses to land-use change. The data is available on the Natural History Museum Data Portal, or through the predictsr R package:\n\n2016 data release\n2022 data release\n\n\n\n\nVideo\n\nWhy should we be worried about biodiversity loss? Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. Short film produced by Celeste de Knock for NHM. \nTackling Biodiversity Loss and Climate Change with Greta Thunberg. Dr Adriana De Palma and Greta Thunberg discuss tackling biodiversity loss and climate change together, at The NHM."
   },
   {
     "objectID": "publications.html",
