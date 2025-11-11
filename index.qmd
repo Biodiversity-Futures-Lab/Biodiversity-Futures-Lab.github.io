@@ -14,8 +14,4 @@ with any organisation that we believe is working towards one or both of these go
 either of them. As a result, BFL's work encompasses commercial-facing projects and policy-related work as well as 
 more traditionally academic research.
 
-*(This site is still very much a work-in-progress, so please bear with us as we add more content and keep it updated.)*
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+*(This site is still very much a work-in-progress, so please bear with us as we add more content and keep it updated!)*

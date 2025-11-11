@@ -12,8 +12,8 @@ lab_member_details <- rbind(
   c("Sophie Jane Tudge", "0000-0002-0447-9448"),
   c("Justin E. Isip", "0000-0002-9686-8888"),
   c("Patrick A. Walkden", "0000-0002-5922-8777"),
-  c("Sara Contu", "0000-0002-9070-1091")
-  # Connor?
+  c("Sara Contu", "0000-0002-9070-1091"),
+  c("Connor Duffin", "0000-0003-1230-3028")
 ) |>
   as.data.frame() |>
   setNames(c("name", "orcid"))
