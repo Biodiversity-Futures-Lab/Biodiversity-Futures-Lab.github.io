@@ -2,7 +2,6 @@
 title: "Biodiversity Futures Lab"
 about:
   template: jolla
-  image: assets/bfl-logo.png
 ---
 
 Welcome to the website of the Biodiversity Futures Lab (BFL) at the [Natural History Museum](https://www.nhm.ac.uk/) 
