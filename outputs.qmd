@@ -6,7 +6,7 @@ title: "Outputs"
 # Code
 
 - [**The Biodiversity Intactness Index (BII) tutorial**](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.
-- [`predictsr` **R package**](https://cran.r-project.org/web/packages/predictsr/index.html) retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. It is available on CRAN: [predictsr](https://cran.r-project.org/web/packages/predictsr/index.html).
+- [`predictsr` **R package**](https://cran.r-project.org/web/packages/predictsr/index.html) retrieves PREDICTS project datasets openly available on the [NHM Data Portal](https://data.nhm.ac.uk), specifically from the 2016 and 2022 data releases. It is available on [CRAN](https://cran.r-project.org/web/packages/predictsr/index.html).
 
 
 # Data
