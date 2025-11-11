@@ -28,7 +28,7 @@ website:
 format:
   html:
     allow-html: true
-    theme: cosmo
+    theme: litera
     css: styles.css
     toc: true
 
