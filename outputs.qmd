@@ -1,42 +1,63 @@
 ---
 title: "Outputs"
+format:
+  html:
+    toc: true
+    toc-title: Contents
+    toc-location: left
+    toc-depth: 2
+    number-sections: false
+    theme: cosmo
 ---
+
+This page provides an overview of the resources produced by our lab, including code tutorials and tools to support analysis, openly available data products for research and exploration, recordings of talks and presentations by lab members and collaborators, and demonstration videos that showcase our methods and findings. 
 
 # 🛠️ Code
 
-## Biodiversity Intactness Index tutorial
+::: {.callout title="Biodiversity Intactness Index (BII) tutorial"}
+[The BII tutorial](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.
+:::
 
-[**The Biodiversity Intactness Index (BII) tutorial**](https://adrianadepalma.github.io/BII_tutorial/) gives an example of how to model and project the BII using a subset of the PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) data.
+------------------------------------------------------------------------
 
-## `predictsr` R package
-
+::: {.callout title="predictsr R package"}
 The `predictsr` package retrieves PREDICTS project datasets openly available on the Natural History Museum Data Portal, specifically from the 2016 and 2022 data releases. Available on CRAN: [predictsr](https://cran.r-project.org/web/packages/predictsr/index.html)
+:::
 
----
+------------------------------------------------------------------------
 
 # 📊 Data
 
-## Biodiversity Intactness Index (BII) data
+::: {.callout title="Biodiversity Intactness Index (BII) data"}
+Explore country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, available [here](https://data.nhm.ac.uk/dataset/bii-bte).
+:::
 
-Explore country, region, and global-level BII summaries from 1970 to 2050, under various scenarios, are available [here](https://data.nhm.ac.uk/dataset/bii-bte)
+------------------------------------------------------------------------
 
-## PREDICTS project data releases
-
+::: {.callout title="PREDICTS project data releases"}
 The PREDICTS (Projecting Responses of Ecological Diversity in Changing Terrestrial Systems) project provides open access data on terrestrial biodiversity responses to land-use change. The data is available on the Natural History Museum Data Portal:
 
 -   [2016 data release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database-v1-1)
 -   [2022 data release](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
+:::
 
----
+------------------------------------------------------------------------
 
 # 🎙️ Talks
 
-Meet the team members at upcoming conferences. Stay tuned for more information on their talks and presentations.
 
----
+::: {.callout title="Recovering nature: a biodiverse and liveable future"}
+Watch Prof. Andy Purvis’ Royal Society talk, “Bending the Curve of Biodiversity Loss Requires a ‘Satnav’ for Nature”, presented on 13th June 2023. [Available here](https://youtu.be/usIIB71oxtE?list=PLKYTvTbXFuCj0S4IOnfnRqseSE2y3lgzJ&t=16296).
+:::
+
+------------------------------------------------------------------------
 
 # 🎥 Video
 
-## Why should we be worried about biodiversity loss? (Celeste de Knock)
+::: {.callout title="Why should we be worried about biodiversity loss? ([Celeste de Kock](https://www.linkedin.com/in/celeste-de-kock-a7247b149/?originalSubdomain=uk))"}
+Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. This video is the result of work by Celeste de Kock, who completed a placement in the lab while studying for an MSc in Science Communication at Imperial College London. [Watch the video](https://youtu.be/yFN21MYiZ8A).
+:::
 
-Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. 🎬 [Watch the video](https://www.youtube.com/watch?v=yFN21MYiZ8A&t=9s)
+::: {.callout title="PREDICTS Explainer ([Camilla Arvidsson](https://www.linkedin.com/in/camilla-arvidsson-a8a864177/?originalSubdomain=de))"} 
+Watch this video to learn how the PREDICTS project and the Biodiversity Intactness Index (BII) work to understand and quantify human impacts on biodiversity. This video is the result of work by Camilla Arvidsson, who completed a placement in the lab while studying for an MSc in Science Communication at Imperial College London. [Watch the video](https://youtu.be/qj2dynmK7oY)
+:::
