@@ -6,10 +6,10 @@ As a lab we strive to develop methods and code that are *reproducible*, *user-fr
 
 In short we try and make sure:
 
-1. Our code is well-documented with a consistent style, with automated testing where appropriate.
-2. Git is used for all code, and any commercial code has strict code review procedures.
-3. We code collaboratively, roughly following a [GitHub-flow](https://githubflow.github.io/) strategy.
-4. We [package up](https://r-pkgs.org/) our code where possible, and try to make it easy for other team members to use.
-5. We try to follow the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) as best we can (with large projects this can be tricky!).
+- Our code is well-documented with a consistent style, with automated testing where appropriate.
+- Git is used for all code, and any commercial code has strict code review procedures.
+- We code collaboratively, roughly following a [GitHub-flow](https://githubflow.github.io/) strategy.
+- We [package up](https://r-pkgs.org/) our [code](https://github.com/Biodiversity-Futures-Lab/predictsr) where possible, and try to make it easy for other team members to use.
+- We try to follow the [Unix philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) as best we can (with large projects this can be tricky!).
 
-Due to our Commercial, Policy, and Academic interests the need for a well-established, tasteful approach to development is amplified as no longer does our work need to translate across a single of these domains, but across all three!
+Due to our Commercial, Policy, and Academic interests the need for a well-established and tasteful approach to development is amplified as no longer does our work need to translate across a single of these domains, but across all three!
