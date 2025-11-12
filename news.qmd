@@ -4,6 +4,8 @@ title: "News"
 
 - **BII featured in the** [**NHM Wildlife Photographer of the Year 2025**](https://www.nhm.ac.uk/wpy) **exhibition** *(17th October 2025)* -- The Biodiversity Intactness Index (BII) is featured in the museum's recent WPY exhibition. The exhibition runs from 17th October 2025 to 12th July 2026.
 
+- **Charlotte McGinty joins BFL as our Geospatial Analyst** *(29th May 2025)* -- We are delighted to welcome [Charlotte McGinty](https://uk.linkedin.com/in/charlotte-mcginty-a10236185) to BFL as our new Geospatial Analyst! In her new role, she will be supporting the development of BII through the investigation of new geospatial data and models, as well as conducting QA on all BFL geospatial data.
+
 - **BII featured in** [**Fixing Our Broken Planet**](https://www.nhm.ac.uk/visit/galleries-and-museum-map/fixing-our-broken-planet.html) 
 **exhibition** *(8th April 2025)* -- The Museum's brilliant new exhibition includes a quote about BII from Sabine Nix, 
 from her time in BFL. The exhibition's opening featured on 
