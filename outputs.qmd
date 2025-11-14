@@ -2,6 +2,7 @@
 title: "Outputs"
 ---
 
+This page provides an overview of the resources produced by our lab, including code tutorials and tools to support analysis, openly available datasets for research and exploration, recordings of talks and presentations by lab members and collaborators, and demonstration videos that showcase our work.
 
 # Code
 
@@ -16,10 +17,16 @@ title: "Outputs"
   - [2016 data release](https://data.nhm.ac.uk/dataset/the-2016-release-of-the-predicts-database-v1-1)
   - [2022 data release](https://data.nhm.ac.uk/dataset/release-of-data-added-to-the-predicts-database-november-2022)
 
+# Talks
 
-# Video
+- [**Bending the Curve of Biodiversity Loss Requires a 'Satnav' for Nature**](https://www.youtube.com/live/usIIB71oxtE?t=16296) *(13th June 2023)* -- Professor Andy Purvis at The Royal Society.
+{{< video https://youtu.be/usIIB71oxtE?list=PLKYTvTbXFuCj0S4IOnfnRqseSE2y3lgzJ&t=16296 >}}
 
-- [**Why should we be worried about biodiversity loss?**](https://www.youtube.com/watch?v=yFN21MYiZ8A) Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. Short film produced by Celeste de Knock for NHM.
+# Videos
+
+- [**PREDICTS Explainer**](https://www.youtube.com/watch?v=qj2dynmK7oY) -- Learn how the PREDICTS project and the BII work to understand and quantify human impacts on biodiversity. Short film by [Camilla Arvidsson](https://www.linkedin.com/in/camilla-arvidsson-a8a864177/?originalSubdomain=de), who studied for an MSc in Science Communication at Imperial College London with a placement in the lab.
+{{< video https://www.youtube.com/watch?v=qj2dynmK7oY >}}
+- [**Why should we be worried about biodiversity loss?**](https://www.youtube.com/watch?v=yFN21MYiZ8A) Find out from Biodiversity Futures Lab members why biodiversity is a cornerstone of life on Earth and why we should care. Short film produced by [Celeste de Kock](https://www.linkedin.com/in/celeste-de-kock-a7247b149/?originalSubdomain=uk), who completed a placement in the lab whilst studying for an MSc in Science Communication at Imperial College London.
 {{< video https://www.youtube.com/watch?v=yFN21MYiZ8A >}}
-- [**Tackling Biodiversity Loss and Climate Change with Greta Thunberg.**](https://www.youtube.com/watch?v=_IWnB4gWjP0) Dr Adriana De Palma and Greta Thunberg discuss tackling biodiversity loss and climate change together, at The NHM. 
+- [**Tackling Biodiversity Loss and Climate Change with Greta Thunberg**](https://www.youtube.com/watch?v=_IWnB4gWjP0) -- Dr Adriana De Palma and Greta Thunberg discuss tackling biodiversity loss and climate change together, at The NHM. 
 {{< video https://www.youtube.com/watch?v=_IWnB4gWjP0 >}}
