@@ -57,6 +57,9 @@ The *Biodiversity Futures Lab* is based at the Natural History Museum in London.
 <a href="https://github.com/sarac6" class="icon-link" aria-label="GitHub profile for Sara Contu">
   {{< fa brands github >}}<span class="sr-only">GitHub</span>
 </a>
+<a href="https://scholar.google.com/citations?user=ZHxNZdkAAAAJ&hl=en" class="icon-link" aria-label="Google scholar">
+  {{< fa brands google-scholar >}}<span class="sr-only">Google Scholar</span>
+</a>
 </div>
 :::
 
