@@ -1,4 +1,6 @@
-/* Global variables (light + dark adaptations) */
+/* =========================================
+   Global CSS Variables (light mode only)
+   ========================================= */
 :root {
   --team-bg: #ffffff;
   --team-border: #e2e6ea;
@@ -13,21 +15,24 @@
   --gradient: linear-gradient(135deg,#f0f9ff 0%, #fdfdfd 70%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --team-bg: #1f2427;
-    --team-border: #343a40;
-    --team-shadow: 0 2px 6px rgba(0,0,0,0.6);
-    --accent: #4fc3d6;
-    --accent-hover: #7dd9e5;
-    --text-muted: #b0b6ba;
-    --link-color: #7dd9e5;
-    --link-hover: #b6ecf4;
-    --gradient: linear-gradient(135deg,#1f2427 0%, #2a3135 70%);
-  }
+/* =========================================
+   Universal Sans-Serif Typography
+   ========================================= */
+html, body, p, li, td, th, small,
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea,
+a, strong, em, code, pre, blockquote {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, Helvetica, sans-serif !important;
 }
 
-/* Team Grid Layout */
+/* Ensure code blocks still use a monospace font */
+code, pre, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace !important;
+}
+
+/* =========================================
+   Team Grid Layout
+   ========================================= */
 .team-grid {
   display: grid;
   gap: 1.75rem;
@@ -35,7 +40,9 @@
   margin-top: 1.25rem;
 }
 
-/* Individual Member Card */
+/* =========================================
+   Team Member Card
+   ========================================= */
 .team-member {
   background: var(--gradient);
   border: 1px solid var(--team-border);
@@ -47,6 +54,8 @@
   display: flex;
   flex-direction: column;
   isolation: isolate;
+  text-align: center;
+  animation: fadePop .5s ease both;
 }
 
 .team-member::before {
@@ -65,21 +74,34 @@
 }
 
 .team-member:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.10);
   border-color: var(--accent);
 }
 
-/* Photo */
+/* Staggered animation delays */
+.team-member:nth-child(2) { animation-delay: .05s; }
+.team-member:nth-child(3) { animation-delay: .10s; }
+.team-member:nth-child(4) { animation-delay: .15s; }
+.team-member:nth-child(5) { animation-delay: .20s; }
+.team-member:nth-child(6) { animation-delay: .25s; }
+.team-member:nth-child(7) { animation-delay: .30s; }
+.team-member:nth-child(8) { animation-delay: .35s; }
+.team-member:nth-child(9) { animation-delay: .40s; }
+
+/* =========================================
+   Photo
+   ========================================= */
 .team-photo {
   width: 88px;
   height: 88px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 0 0 .75rem 0;
+  margin: 0 auto .75rem;
   border: 3px solid rgba(0,138,179,0.25);
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
   transition: border-color .3s ease, transform .3s ease;
+  display: block;
 }
 
 .team-member:hover .team-photo {
@@ -87,33 +109,38 @@
   transform: scale(1.03);
 }
 
-/* Name & Role */
+/* =========================================
+   Name & Role
+   ========================================= */
 .team-name {
-  font-size: .9rem;
+  font-size: 0.95rem;
   line-height: 1.25;
-  margin: 0 0 .35rem 0;
-  font-weight: 200;
-  letter-spacing: .25px;
+  margin: 0 0 .25rem;
+  font-weight: 600;
+  letter-spacing: .2px;
 }
 
 .team-role {
-  margin: 0 0 .85rem 0;
+  margin: 0 0 .7rem;
   font-style: italic;
-  font-size: .9rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   min-height: 2.2em;
 }
 
-/* Links */
+/* =========================================
+   Links
+   ========================================= */
 .team-links {
   display: flex;
   flex-wrap: wrap;
   gap: .5rem .65rem;
   margin-top: auto;
+  justify-content: center;
 }
 
 .icon-link {
-  --size: 38px;
+  --size: 32px;
   width: var(--size);
   height: var(--size);
   display: inline-flex;
@@ -123,7 +150,7 @@
   background: var(--team-bg);
   border: 1px solid var(--team-border);
   color: var(--accent);
-  font-size: 1.15rem;
+  font-size: 1rem;
   transition: background .25s, color .25s, transform .2s, box-shadow .25s, border-color .25s;
   text-decoration: none;
   position: relative;
@@ -148,7 +175,16 @@
   box-shadow: var(--focus-ring);
 }
 
-/* Screen-reader only text */
+/* Ensure shortcode-generated Font Awesome <i> aligns nicely */
+.team-links .icon-link i {
+  line-height: 1;
+  font-size: 1em; /* inherits from parent font-size */
+  display: inline-block;
+}
+
+/* =========================================
+   Accessibility
+   ========================================= */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -161,7 +197,9 @@
   border: 0;
 }
 
-/* Responsive tweaks */
+/* =========================================
+   Responsive Tweaks
+   ========================================= */
 @media (max-width: 520px) {
   .team-grid {
     grid-template-columns: 1fr 1fr;
@@ -185,79 +223,10 @@
   }
 }
 
-/* Optional subtle entrance animation */
+/* =========================================
+   Animation Keyframes
+   ========================================= */
 @keyframes fadePop {
   0% { opacity: 0; transform: translateY(12px) scale(.97); }
   100% { opacity: 1; transform: translateY(0) scale(1); }
-}
-.team-member {
-  animation: fadePop .5s ease both;
-}
-.team-member:nth-child(2) { animation-delay: .05s; }
-.team-member:nth-child(3) { animation-delay: .10s; }
-.team-member:nth-child(4) { animation-delay: .15s; }
-.team-member:nth-child(5) { animation-delay: .20s; }
-.team-member:nth-child(6) { animation-delay: .25s; }
-.team-member:nth-child(7) { animation-delay: .30s; }
-.team-member:nth-child(8) { animation-delay: .35s; }
-.team-member:nth-child(9) { animation-delay: .40s; }
-
-/* Dark mode card hover accent */
-@media (prefers-color-scheme: dark) {
-  .team-member:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.55);
-  }
-  .icon-link {
-    background: #262c2f;
-  }
-  .icon-link:hover,
-  .icon-link:focus {
-    background: var(--accent-hover);
-  }
-}
-
-/* Center + smaller variant for team cards */
-.team-member {
-  text-align: center;
-}
-
-.team-photo {
-  display: block;
-  margin: auto auto auto auto;
-}
-
-.team-name {
-  font-size: 0.95rem;
-  margin: 0 0 .25rem 0;
-  font-weight: 600;
-  letter-spacing: .2px;
-}
-
-.team-role {
-  font-size: 0.75rem;
-  margin: 0 0 .7rem 0;
-  font-style: italic;
-}
-
-.team-links {
-  justify-content: center;
-}
-
-.icon-link {
-  --size: 32px;
-  width: var(--size);
-  height: var(--size);
-  font-size: 1rem;
-}
-
-/* Ensure shortcode-generated Font Awesome <i> aligns nicely */
-.team-links .icon-link i {
-  line-height: 1;
-  font-size: 1em; /* inherits from icon-link font-size */
-  display: inline-block;
-}
-
-/* Optional: reduce animation lift for tighter look */
-.team-member:hover {
-  transform: translateY(-2px);
 }
