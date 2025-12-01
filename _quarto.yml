@@ -15,8 +15,6 @@ website:
         text: Publications
       - href: news.qmd
         text: News
-      - href: wiki.qmd
-        text: Best Practices
     tools:
       - icon: github
         menu:
