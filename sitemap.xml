@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://Biodiversity-Futures-Lab.github.io/index.html</loc>
+    <lastmod>2026-06-30T15:46:18.226Z</lastmod>
+  </url>
+  <url>
     <loc>https://Biodiversity-Futures-Lab.github.io/publications.html</loc>
-    <lastmod>2026-04-17T11:12:48.858Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biodiversity-Futures-Lab.github.io/about.html</loc>
-    <lastmod>2026-04-17T11:12:48.838Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Biodiversity-Futures-Lab.github.io/news.html</loc>
-    <lastmod>2026-04-17T11:12:48.857Z</lastmod>
+    <lastmod>2026-06-30T15:46:18.227Z</lastmod>
   </url>
   <url>
     <loc>https://Biodiversity-Futures-Lab.github.io/outputs.html</loc>
-    <lastmod>2026-04-17T11:12:48.857Z</lastmod>
+    <lastmod>2026-06-30T15:46:18.227Z</lastmod>
   </url>
   <url>
-    <loc>https://Biodiversity-Futures-Lab.github.io/index.html</loc>
-    <lastmod>2026-04-17T11:12:48.857Z</lastmod>
+    <loc>https://Biodiversity-Futures-Lab.github.io/about.html</loc>
+    <lastmod>2026-06-30T15:46:18.196Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Biodiversity-Futures-Lab.github.io/news.html</loc>
+    <lastmod>2026-06-30T15:46:18.226Z</lastmod>
   </url>
 </urlset>
