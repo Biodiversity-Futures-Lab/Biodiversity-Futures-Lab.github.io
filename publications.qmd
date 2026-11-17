@@ -18,13 +18,18 @@ lab_member_details <- rbind(
   as.data.frame() |>
   setNames(c("name", "orcid"))
 
+# OpenAlex requires an API key to avoid shared rate limits (set as a GitHub secret)
+openalex_key <- Sys.getenv("OPENALEX_API_KEY")
+if (openalex_key == "") openalex_key <- NULL
+
 # get all works from orcID using open alex
 works_from_orcids <- openalexR::oa_fetch(
   entity = "works",
   author.orcid = lab_member_details$orcid,
   verbose = TRUE,
   output = "dataframe",
-  abstract = FALSE
+  abstract = FALSE,
+  api_key = openalex_key
 )
 
 distinct_works <- works_from_orcids  |>
