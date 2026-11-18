@@ -23,14 +23,37 @@ openalex_key <- Sys.getenv("OPENALEX_API_KEY")
 if (openalex_key == "") openalex_key <- NULL
 
 # get all works from orcID using open alex
-works_from_orcids <- openalexR::oa_fetch(
-  entity = "works",
-  author.orcid = lab_member_details$orcid,
-  verbose = TRUE,
-  output = "dataframe",
-  abstract = FALSE,
-  api_key = openalex_key
+works_from_orcids <- tryCatch(
+  openalexR::oa_fetch(
+    entity = "works",
+    author.orcid = lab_member_details$orcid,
+    verbose = TRUE,
+    output = "dataframe",
+    abstract = FALSE,
+    api_key = openalex_key
+  ),
+  error = function(e) {
+    message("OpenAlex publication lookup failed; continuing without publication data.")
+    NULL
+  }
 )
+
+publication_data_available <- !is.null(works_from_orcids)
+if (!publication_data_available) {
+  works_from_orcids <- data.frame(
+    is_retracted = logical(),
+    display_name = character(),
+    topics = I(list()),
+    title = character(),
+    landing_page_url = character(),
+    doi = character(),
+    cited_by_count = numeric(),
+    authorships = I(list()),
+    source_id = character(),
+    source_display_name = character(),
+    publication_year = integer()
+  )
+}
 
 distinct_works <- works_from_orcids  |>
   # we don't actually have any retracted works in this list
@@ -180,7 +203,7 @@ GetFormattedReference <- function(reference, lab_member_details) {
 distinct_references <- rep(NA, nrow(distinct_works))
 
 # get the formatted reference for each open Alex entry
-for(i in 1:length(distinct_references)) {
+for(i in seq_along(distinct_references)) {
   distinct_references[i] <- GetFormattedReference(
     distinct_works[i, ],
     lab_member_details = lab_member_details
@@ -197,9 +220,21 @@ RoundDown100 <- function(x) {
 ```
 
 
-The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package. Our current lab members combined have written over `r nrow(distinct_works) |> RoundDown100()` publications, cited over `r sum(distinct_works$cited_by_count) |> RoundDown100() |> scales::number(big.mark = ",")` times.
+```{r publication-counts, results = "asis", echo = FALSE}
+if (publication_data_available) {
+  cat(
+    "The following is a list of publications from members of the lab. These references are automatically fetched using the `{openalexR}` package. Our current lab members combined have written over ",
+    nrow(distinct_works) |> RoundDown100(),
+    " publications, cited over ",
+    sum(distinct_works$cited_by_count) |> RoundDown100() |> scales::number(big.mark = ","),
+    " times.\n\n",
+    sep = ""
+  )
+} else {
+  cat("The OpenAlex publication list is temporarily unavailable.\n\n")
+}
+```
 
 ```{r render-references, output = "asis", echo = FALSE}
 gluedown::md_paragraph(distinct_references)
 ```
-
